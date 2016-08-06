@@ -7,7 +7,7 @@ ul {
     list-style-type: none;
 }
 .custom-backgroud {
-    background-image: url("../img/bg.jpg");
+    background-image: url("http://7xp1b3.com1.z0.glb.clouddn.com/poster.jpg");
     background-attachment: fixed;
     background-position: center top;
 }
@@ -21,6 +21,10 @@ ul {
 .navbar-inverse {
     border: 0 none;
     background: #fff none repeat scroll 0 0;
+}
+
+.navbar-toggle {
+    background-color: #808080 !important;
 }
 
 .navbar {
@@ -58,7 +62,7 @@ ul {
 
 .header-content-wrap {
     position: relative;
-    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+    background: rgba(0, 0, 0, 0.2) none repeat scroll 0 0;
     padding: 285px 0 210px 0;
 }
 

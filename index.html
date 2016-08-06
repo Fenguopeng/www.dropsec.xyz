@@ -18,19 +18,20 @@
     <nav id="main-nav" class="navbar navbar-inverse" role="navigation">
         <div class="container">
             <div class="navbar-header">
-                <button data-target=".bs-navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle collapsed">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="sr-only">切换导航</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="http://www.dropsec.xyz/"><img alt="DROPS攻防训练营" src="img/drops.png"></a>
+                <a class="navbar-brand" href="http://www.dropsec.xyz/"><img alt="DROPS攻防训练营" src="http://7xp1b3.com1.z0.glb.clouddn.com/drops.png"></a>
             </div>
-            <div>
+            <div id="navbar-collapse" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#">主页</a></li>
                     <li><a href="#aboutus">关于</a></li>
                     <li><a href="#member">团队成员</a></li>
+                    <li><a href="#lookfor">招募</a></li>
                     <li><a href="http://ctf.dropsec.xyz">CTF平台</a></li>
                 </ul>
             </div>
@@ -56,7 +57,7 @@
                 <div class="section-legend">About Us</div>
             </div>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 about-us-intro">
                     <p>
                         中原工学院DROPS攻防训练营，于2014年在计算机学院安全兴趣小组的基础上组建。 DROPS攻防训练营是计算机学院学生课外创新活动的一部分，得到了计算机学院的大力支持。小组取名DROPS，寓意小组成员个体虽小，但像水滴一样富有渗透、钻研精神，能水滴石穿，同时也体现“滴水之恩涌泉相报”的校园文化。
                     </p>
@@ -67,8 +68,8 @@
                         DROPS攻防训练营共有两个方向,Web安全和二进制安全。团队形成良好的技术学习氛围,WEB安全小组每周一召开技术分享会,二进制安全小组每周三召开技术分享会。
                     </p>
                 </div>
-                <div class="col-md-6">
-                    <ul data-scrollreveal="enter right after 0s over 1s" class="skills" data-sr-init="true" data-sr-complete="true">
+                <div class="col-md-6 skills">
+                    <ul>
                         <li class="skill">
                             <div class="section-legend">
                                 渗透测试
@@ -161,9 +162,9 @@
                             <img alt="member picture" class="img-circle" src="http://www.xseclab.com/wp-content/themes/zerif-lite/images/team1.png">
                         </figure>
                         <div class="member-details">
-                            <h3 class="dark-text color-border-bottom">Lazy</h3>
+                            <h3 class="dark-text color-border-bottom">Joy_nick</h3>
                             <div class="position">撩妹大师
-                                组长</div>
+                                副团长</div>
                         </div>
                         <div class="details">
                             擅长各种撩妹技能，熟悉常见撩妹技巧
@@ -229,7 +230,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <h3 class="white-txt">团队特色</h3>
-                    <ul class="">
+                    <ul>
                         <li>学习气氛浓厚,每周技术分享交流</li>
                         <li>资源积淀丰富,专人负责新人培养</li>
                         <li>独立实验室,环境整洁优美</li>
@@ -271,13 +272,13 @@
     <div class="container">
         <div class="col-md-3 team-info">
             <div class="icon-top red-text">
-                <img alt="" src="img/map25-redish.png">
+                <img alt="" src="http://7xp1b3.com1.z0.glb.clouddn.com/map25-redish.png">
             </div>
             中原工学院南校区8#513
         </div>
         <div class="col-md-3 team-info">
             <div class="icon-top red-text">
-                <img alt="" src="img/envelope4-green.png">
+                <img alt="" src="http://7xp1b3.com1.z0.glb.clouddn.com/envelope4-green.png">
             </div>
             admin#dropsec.xyz
         </div>
@@ -296,5 +297,9 @@
         </div>
     </div>
 </footer>
+<script src="//cdn.bootcss.com/scrollReveal.js/3.3.1/scrollreveal.min.js"></script>
+<script>
+    window.sr = ScrollReveal().reveal('.intro-text, .about-us-intro, .skill, .team-box, .col-md-4');
+</script>
 </body>
 </html>
